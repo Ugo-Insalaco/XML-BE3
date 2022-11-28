@@ -61,16 +61,16 @@
                                                 <xsl:value-of select="@mois"/>/<xsl:value-of select="@annee"/>
                                             </xsl:variable>
                                             <fo:table-row>
-                                                <fo:table-cell><fo:block><xsl:value-of select="$date"/><fo:block/></fo:table-cell>
-                                                <fo:table-cell><fo:block><xsl:value-of select="@trains-prevus"/><fo:block/></fo:table-cell>
-                                                <fo:table-cell><fo:block><xsl:value-of select="@trains-ok"/><fo:block/></fo:table-cell>
-                                                <fo:table-cell><fo:block><xsl:value-of select="@annules"/><fo:block/></fo:table-cell>
-                                                <fo:table-cell><fo:block><xsl:value-of select="@retards"/><fo:block/></fo:table-cell>
-                                                <fo:table-cell><fo:block><xsl:value-of select="@regularite"/><fo:block/></fo:table-cell>
-                                            <fo:table-row/>
+                                                <fo:table-cell><fo:block><xsl:value-of select="$date"/></fo:block></fo:table-cell>
+                                                <fo:table-cell><fo:block><xsl:value-of select="@trains-prevus"/></fo:block></fo:table-cell>
+                                                <fo:table-cell><fo:block><xsl:value-of select="@trains-ok"/></fo:block></fo:table-cell>
+                                                <fo:table-cell><fo:block><xsl:value-of select="@annules"/></fo:block></fo:table-cell>
+                                                <fo:table-cell><fo:block><xsl:value-of select="@retards"/></fo:block></fo:table-cell>
+                                                <fo:table-cell><fo:block><xsl:value-of select="@regularite"/></fo:block></fo:table-cell>
+                                            </fo:table-row>
                                         </xsl:for-each>
-                                    <fo:table-body/>
-                                <fo:table/>
+                                    </fo:table-body>
+                                </fo:table>
                             </xsl:for-each>
                         </xsl:for-each>
                     </xsl:for-each>
