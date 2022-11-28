@@ -15,10 +15,17 @@
                     margin-left="2.5cm" 
                     margin-right="1cm">
                     <fo:region-body background-color="#FFFFFF"/>
+                    <fo:region-after background-color="#FFFFFF"/>
                 </fo:simple-page-master>
+
             </fo:layout-master-set>
             <!-- Page de garde -->
             <fo:page-sequence master-reference="page-unique">
+                <fo:static-content flow-name="xsl-region-after">
+                    <fo:block font-weight="bold">
+                    - Page <fo:page-number/> -
+                    </fo:block>
+                </fo:static-content>
                 <fo:flow flow-name="xsl-region-body">
                     <fo:block font-weight="bold">
                         Régularité mensuelle TGV
@@ -33,6 +40,11 @@
 
             <!-- Corps du document -->
             <fo:page-sequence master-reference="page-unique">
+                <fo:static-content flow-name="xsl-region-after">
+                    <fo:block font-weight="bold">
+                    - Page <fo:page-number/> -
+                    </fo:block>
+                </fo:static-content>
                 <fo:flow flow-name="xsl-region-body">
 
                     <!-- Pour chaque Axe -->
